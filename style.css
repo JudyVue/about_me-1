@@ -1,3 +1,10 @@
 * {
-  color: red;
+  color: navy;
+  font: georgia;
+}
+
+header {
+  color: white
+  background: navy
+  font size: 60
 }
