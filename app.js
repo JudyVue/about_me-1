@@ -1,9 +1,10 @@
 var correctAnswers = 0
-
+//
 var userName = prompt('Welcome! What is your name?');
-
-alert('Thank you for visiting my site, ' + userName + '! Let\'s see how much you already know about me! Please answer yes or no');
-
+//
+ alert('Thank you for visiting my site, ' + userName + '! Let\'s see how much you already know about me! Please answer yes or no');
+//
+function questionOne() {
 var answerOne = prompt('Was I born on the same day Julius Caesar was assassinated?');
 
 if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
@@ -12,7 +13,10 @@ if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
 } else {
   alert('Sorry, ' + userName + ', no bueno. I was born on March 15.');
 }
-
+};
+questionOne();
+//
+function questionTwo(){
 var answerTwo = prompt('I am from West Virginia.');
 
 if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y') {
@@ -21,7 +25,10 @@ if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y') {
 } else {
   alert('Sorry, ' + userName + ', that is wrong. I was born and raised in West Virginia.');
 }
+};
+questionTwo();
 
+function questionThree(){
 var answerThree = prompt('I played basketball at West Virginia University.');
 
 if (answerThree.toLowerCase() === 'no' || answerThree.toLowerCase() === 'n') {
@@ -30,7 +37,10 @@ if (answerThree.toLowerCase() === 'no' || answerThree.toLowerCase() === 'n') {
 } else {
   alert('That is wrong. I was a kicker on the football team at WVU.');
 }
+};
+questionThree();
 
+function questionFour(){
 var answerFour = prompt('Italian cuisine is my favorite.');
 
 if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
@@ -39,7 +49,10 @@ if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
 } else {
   alert('Non buono, ' + userName + '. I could eat pasta everyday for the rest of my life.');
 }
+};
+questionFour();
 
+function questionFive(){
 var answerFive = prompt('I have always wanted to be a pilot.');
 
 if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
@@ -48,7 +61,10 @@ if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
 } else {
   alert('This is true. I still aspire to be a pilot one day.');
 }
+};
+questionFive();
 
+function questionSix(){
 var jerseyNumber = 48;
 
 for (i = 0; i < 4; i++) {
@@ -67,7 +83,10 @@ for (i = 0; i < 4; i++) {
     alert('It is a jersey number... so let\'s try guessing a number, ' + userName +'.'
     )
 }
+};
+questionSix();
 
+function questionSeven(){
 var states = ['west virginia', 'california', 'louisiana', 'ohio']
 
 for (var i = 0; i < 6; i++) {
@@ -85,5 +104,10 @@ for (var i = 0; i < 6; i++) {
     console.log(stateAnswer.toLowerCase());
   }
 }
+};
+questionSeven();
 
+function finalScore(){
 alert('Thanks for playing, ' + userName + '. You answered ' + correctAnswers + ' out of 7 questions correctly! Click ok to learn more about me.')
+};
+finalScore(); 
