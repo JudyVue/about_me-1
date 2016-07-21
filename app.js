@@ -54,7 +54,7 @@ var jerseyNumber = 48;
 for (i = 0; i < 4; i++) {
   var jerseyAnswer = prompt('What jersey number did I wear in college?');
   if ((parseInt(jerseyAnswer) !== jerseyNumber) && (i === 3)) {
-    alert('Sorry, ' + userName + '. You ran out of attempts');
+    alert('Sorry, ' + userName + '. That is wrong and you have run out of attempts');
   } else if (parseInt(jerseyAnswer) === jerseyNumber) {
     alert('That is correct!');
     correctAnswers += 1
@@ -63,7 +63,9 @@ for (i = 0; i < 4; i++) {
     alert('That is too high... Try again!');
   } else if (parseInt(jerseyAnswer) < jerseyNumber) {
     alert('That is too low... Try again!');
-  }
+  } else if (isNaN(jerseyAnswer) === true)
+    alert('It is a jersey number... so let\'s try guessing a number, ' + userName +'.'
+    )
 }
 
 var states = ['west virginia', 'california', 'louisiana', 'ohio']
@@ -84,4 +86,4 @@ for (var i = 0; i < 6; i++) {
   }
 }
 
-alert('Thanks for playing, ' + userName + '. You answered ' + correctAnswers + ' out of 7 questions correctly!')
+alert('Thanks for playing, ' + userName + '. You answered ' + correctAnswers + ' out of 7 questions correctly! Click ok to learn more about me.')
