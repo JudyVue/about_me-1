@@ -1,10 +1,23 @@
-* {
-  color: navy;
-  font: georgia;
+html {
+  font-family: Courier;
+  color: white;
+  background-color: grey;
+  opacity: 0.5;
 }
 
 header {
-  color: white
-  background: navy
-  font size: 60
+  font-family: Courier;
+  font-size: 100px;
+}
+
+footer {
+  width:850px;
+  height: 450px;
+}
+
+img.gfooter {
+  float:center;
+  width: 800px;
+  height: 400px;
+  padding: 20px;
 }
